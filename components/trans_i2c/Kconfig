@@ -1,0 +1,26 @@
+menu "I2C IO Config"
+    config I2C0_INTR_FLAG
+        int "INTR of I2C0"
+        range 0 7
+        default 0
+    config I2C1_INTR_FLAG
+        int "INTR of I2C1"
+        range 0 7
+        default 0
+    config I2C0_USED_IO_SCL
+        int "GPIO_NUM of I2C0 SCL"
+        range -1 23
+        default 8
+    config I2C0_USED_IO_SDA
+        int "GPIO_NUM of I2C0 SDA"
+        range -1 23
+        default 2
+    config I2C1_USED_IO_SCL
+        int "GPIO_NUM of I2C1 SCL"
+        range -1 23
+        default -1
+    config I2C1_USED_IO_SDA
+        int "GPIO_NUM of I2C1 SDA"
+        range -1 23
+        default -1
+endmenu
